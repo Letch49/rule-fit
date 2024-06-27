@@ -1,14 +1,18 @@
 [tool.poetry]
-name = "rulefit"
-version = "0.1.0"
+name = "rulefit-vvsu"
+version = "0.2.2"
 description = ""
 authors = ["roman"]
 readme = "README.md"
+packages = [
+    { include = "imodels", from = "src" },
+    { include = "rulefit_vvsu", from = "src" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-scikit-learn = "^1.5.0"
-pandas = "^2.2.2"
+python = ">=3.9,<4.0"
+scikit-learn = ">=1.4.0"
+pandas = ">=2.2.0"
 mlxtend = "^0.23.1"
 
 

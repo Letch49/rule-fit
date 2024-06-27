@@ -17,12 +17,12 @@ from sklearn.base import BaseEstimator, ClassifierMixin, RegressorMixin
 from sklearn.base import TransformerMixin
 from sklearn.utils.validation import check_array, check_is_fitted
 
-from src.imodels.rule_set.rule_set import RuleSet
-from src.imodels.util.arguments import check_fit_arguments
-from src.imodels.util.extract import extract_rulefit
-from src.imodels.util.rule import get_feature_dict, replace_feature_name, Rule
-from src.imodels.util.score import score_linear
-from src.imodels.util.transforms import Winsorizer, FriedScale
+from imodels.rule_set.rule_set import RuleSet
+from imodels.util.arguments import check_fit_arguments
+from imodels.util.extract import extract_rulefit
+from imodels.util.rule import get_feature_dict, replace_feature_name, Rule
+from imodels.util.score import score_linear
+from imodels.util.transforms import Winsorizer, FriedScale
 
 
 class RuleFit(BaseEstimator, TransformerMixin, RuleSet):
